@@ -18,7 +18,7 @@
 
         <Button
 
-    Foreground="White" Width="144" VerticalAlignment="Top" Margin="0,315,0,0" HorizontalAlignment="Center" FontSize="18" Content="Войти" Background="#FF6F4E37" FontFamily="Montserrat" Height="40"/>
+    Foreground="White" Width="144" VerticalAlignment="Top" Margin="0,315,0,0" HorizontalAlignment="Center" FontSize="18" Content="Войти" Background="#FF6F4E37" FontFamily="Montserrat" Height="40" BorderBrush="#FF6F4E37"/>
         <TextBox
 
             Width="258" VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,154,0,0" HorizontalAlignment="Center" FontSize="18" FontFamily="Montserrat" Height="30"/>
