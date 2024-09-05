@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:App1"
         mc:Ignorable="d"
         Title="Management" Height="450" Width="450">
-    <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,42,0,0" TextWrapping="Wrap" Text="Управление персоналом" VerticalAlignment="Top" FontFamily="Montserrat" FontSize="24" FontWeight="Bold" Width="358" TextAlignment="Center"/>
-        <Button Content="Управление сотрудниками" HorizontalAlignment="Center" Margin="0,143,0,0" VerticalAlignment="Top" FontFamily="Montserrat" Height="33" Width="200" Background="#FF6F4E37" BorderBrush="#FF6F4E37" Foreground="White"/>
-        <Button Content="Управление сменами" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" Height="33" Width="200" Background="#FF6F4E37" BorderBrush="#FF6F4E37" Foreground="White"/>
-        <Button Content="Управление заказами" HorizontalAlignment="Center" Margin="0,259,0,0" VerticalAlignment="Top" FontFamily="Montserrat" Height="33" Width="200" Background="#FF6F4E37" BorderBrush="#FF6F4E37" Foreground="White"/>
+    <Grid x:Name="Management" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
     </Grid>
 </Window>
