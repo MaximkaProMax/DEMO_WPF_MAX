@@ -5,12 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App1"
         mc:Ignorable="d"
-        Title="Management" Height="450" Width="450">
-    <Grid x:Name="Management" Background="White">
+        Title="Management" Height="450" Width="450" ResizeMode="CanMinimize">
+    <Grid x:Name="Менеджмент" Background="White">
+
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Управление персоналом" FontFamily="Montserrat" FontSize="24" TextAlignment="Center" FontWeight="Bold" Grid.ColumnSpan="3" x:Name="textlabel" Margin="0,30,0,0"/>
+        <Button Grid.Row="1" Grid.Column="0" Height="30" Width="300" Grid.ColumnSpan="3" FontFamily="Montserrat" FontSize="18" Background="#FF6F4E37" Foreground="White"> Управление сотрудниками</Button>
+        <Button Grid.Row="2" Grid.Column="0" Height="30" Width="300" Grid.ColumnSpan="3" FontFamily="Montserrat" FontSize="18" Background="#6F4E37" Foreground="White">Управление сменами</Button>
+        <Button Grid.Row="3" Grid.Column="0" Height="30" Width="300" Grid.ColumnSpan="3" FontFamily="Montserrat" FontSize="18" Background="#6F4E37" Foreground="White">Управление заказами</Button>
     </Grid>
 </Window>
