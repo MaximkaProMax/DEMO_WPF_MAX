@@ -7,22 +7,28 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="450" ResizeMode="NoResize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-        <TextBlock
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-    VerticalAlignment="Top" Text="Авторизация" TextWrapping="Wrap" Margin="0,36,0,0" HorizontalAlignment="Center" FontSize="36" FontFamily="Montserrat" FontWeight="Bold"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Авторизация" FontSize="36" TextAlignment="Center" FontWeight="Bold" Margin="0,20,0,0"/>
 
-        <TextBlock VerticalAlignment="Top" Text="Почта" TextWrapping="Wrap" Margin="0,127,0,0" HorizontalAlignment="Center" FontSize="18" FontFamily="Montserrat" Width="258"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Почта" FontFamily="Montserrat" FontSize="18" FontWeight="Bold" Margin="74,20,0,0"/>
+        <TextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Height="30" Width="300" Margin="0,30,0,0" FontFamily="Montserrat" FontSize="18"/>
 
-        <TextBlock VerticalAlignment="Center" Text="Пароль" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="18" FontFamily="Montserrat" Width="258"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Пароль" FontFamily="Montserrat" FontSize="18" FontWeight="Bold" Margin="74, 20, 0, 0"/>
+        <PasswordBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Height="30" Width="300" Margin="0, 30, 0, 0" FontFamily="Montserrat" FontSize="18"/>
 
-        <Button
-
-    Foreground="White" Width="144" VerticalAlignment="Top" Margin="0,315,0,0" HorizontalAlignment="Center" FontSize="18" Content="Войти" Background="#FF6F4E37" FontFamily="Montserrat" Height="40" BorderBrush="#FF6F4E37"/>
-        <TextBox
-
-            Width="258" VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,154,0,0" HorizontalAlignment="Center" FontSize="18" FontFamily="Montserrat" Height="30"/>
-        <PasswordBox HorizontalAlignment="Center" Margin="0,233,0,0" VerticalAlignment="Top" Width="258" Height="30" FontFamily="Montserrat" FontSize="18"/>
-
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="50" Width="300" Margin="0, 0, 0, 0" FontFamily="Montserrat" FontSize="24" FontWeight="Bold" BorderBrush="#FF6F4E37" Background="#FF6F4E37" Foreground="White">Войти</Button>
     </Grid>
 </Window>
