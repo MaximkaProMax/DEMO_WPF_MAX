@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Content Include="Guide Shift Management\Guide.txt" />
+    <Compile Include="Models\Shift.cs" />
     <Compile Include="Shift Management.xaml.cs">
       <DependentUpon>Shift Management.xaml</DependentUpon>
     </Compile>

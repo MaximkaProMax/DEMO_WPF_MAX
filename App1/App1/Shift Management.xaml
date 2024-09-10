@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:App1"
         mc:Ignorable="d"
         Title="Shift_Management" Height="450" Width="800">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -23,6 +24,32 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Text="Управление сменами" FontFamily="Montserrat" FontSize="24" TextAlignment="Center" FontWeight="Bold" Margin="0,35,0,0"/>
-        <DataGrid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2" d:ItemsSource="{d:SampleData ItemCount=5}" FontFamily="Montserrat" Background="#FF6F4E37" BorderBrush="#FF6F4E37"/>
+        <DataGrid x:Name="shiftDataGrid" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2"
+                  
+                  AutoGenerateColumns="False"
+                  FontFamily="Montserrat"
+                  Background="#FF6F4E37"
+                  BorderBrush="#FF6F4E37">
+
+            <!--
+            AutoGenerateColumns="False" - убирает автоматические СТОЛБЦЫ
+            
+            DataGrid.Columns - это элемент, который содержит коллекцию СТОЛБЦОВ, которые будут отображаться в DataGrid
+            DataGridTextColumn - это тип столбца, который отображает ТЕКСТОВЫЕ данные
+            
+            Header - заголовок столбца, который будет ОТОБРАЖАТЬСЯ в верхней части DataGrid
+            Binding - связывает данные из источника данных с этим столбцом
+            
+            Например, {Binding Number} означает, 
+            что данные для этого столбца будут взяты из свойства Number объекта, который является источником данных
+            -->
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" Binding="{Binding Number}" />
+                <DataGridTextColumn Header="Смена" Binding="{Binding ShiftName}" />
+                <DataGridTextColumn Header="Начало смены" Binding="{Binding Start}" />
+                <DataGridTextColumn Header="Конец смены" Binding="{Binding End}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
